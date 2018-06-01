@@ -1,0 +1,85 @@
+<div class="list-page userCenter">
+    <!-- 头部导航 -->
+    <div class="topNav listNav">
+        <a href="#" class="logo"></a>
+        <div class="right-nav">
+            <a href="javascript:;" class="kf icon-link"></a>
+            <a href="javascript:;" class="close icon-link"></a>
+        </div>
+    </div>
+    <!-- 头部导航 -->
+    <div class="listwrapper uc-listwrapper">
+        <div class="hd">
+            <em></em>帐号信息</div>
+        <div class="bd">
+            <p>尊敬的用户您好！您提供的JINZHIHAN绝地求生帐号正在第三方组织的吃鸡比赛中使用。</p>
+            <p>比赛时间：2018-05-12 13:00:23 — 2018-05-12 13:00:23</p>
+            <p class="t-r">
+                <span class="btn btn-default b f16 stop" ng-click="stopAccount()">暂停参与
+                    <em>
+                            点击“暂停参与”按钮，在本次吃鸡赛事结束后，您的账号将不会再提供给吃鸡赛事！您的账号如果正在被赛事使用，严禁比赛期间私自登陆账号。如果发现，您当天的收益将会取消。请知晓！
+                    </em>
+                </span>
+            </p>
+        </div>
+        <div class="hd type2">
+            <em></em>我要租号</div>
+        <div class="bd">
+            <dl class="shop-table">
+                <dt>
+                    <img src="" />
+                </dt>
+                <dd class="time">
+                    <p>租赁时长：
+                        <span class="time-box">
+                            <em class="time-cge" ng-click="changeTime(-1)">-</em>
+                            <em class="time-num">{{shopTime}}</em>
+                            <em class="time-cge" ng-click="changeTime(1)">+</em>
+                        </span>
+                    </p>
+                    <p class="t-r mgt-10">（租赁时长2小时起步）</p>
+                </dd>
+                <dd class="detail">
+                    <p class="title">【绝地求生官方账号||全新账号|全新游戏|限时活动价82元】
+
+                    </p>
+                    <p>租赁单价：
+                        <span class="c-fff">￥1.00元/小时</span>
+                    </p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <dl class="jsbtn">
+        <dt class="btn btn-default b f16" ng-click="createOrder()">立即租号</dt>
+        <dd>应付金额：
+            <span class="yellor">￥{{shopTime.toFixed(2)}}元</span>
+        </dd>
+        <dd>置换资产：{{shopTime*10}}斑马</dd>
+    </dl>
+
+    <!-- 扫码支付 -->
+    <div my-dialog="" title="扫码支付" is-show="zfShow">
+        <div class="zf-dia">
+            <p>应付金额：{{queryPayOptions.price.toFixed(2)}} 置换资产：{{queryPayOptions.bm}}斑马</p>
+            <p>实际付款金额：
+                <span class="yellor">{{queryPayOptions.cPrice.toFixed(2)}}元</span>
+            </p>
+            <p id="qrcode" >
+            </p>
+            <p class="f12">斑马提示：斑马商城优先扣除您的账户积分</p>
+        </div>
+    </div>
+    <!-- 支付成功 -->
+    <div my-dialog="" title="支付成功" is-show="sucStatus">
+        <div class="zf-suc">
+            <img src="./images/chenggong.png" alt="">
+            <p>尊敬的用户您好！您已经成功在斑马集市租赁账号。请先下载并安装指定上号器，输入登录码进入游戏，祝您游戏愉快，把把吃鸡！</p>
+            <p class="mgt-10">登陆码：<span class="yellor">{{sucOptions.code}}</span></p>
+            <p>租赁时间：{{sucOptions.startTime}} — {{sucOptions.endTime}}</p>
+            <p class="t-c mgt-20">
+                <a class="btn btn-default">我要下载上号器</a>
+            </p>
+        </div>
+    </div>
+</div>

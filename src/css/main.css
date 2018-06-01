@@ -1,0 +1,625 @@
+.main-wrapper {
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+.topNav {
+  line-height: 45px;
+  padding: 0 10px 0 20px;
+}
+.topNav.listNav {
+  background: #22262a;
+}
+.topNav .logo {
+  background: url(../images/logo1.png) no-repeat;
+  width: 94px;
+  height: 33px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.topNav .right-nav {
+  float: right;
+  text-align: right;
+}
+.topNav .right-nav .icon-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 10px;
+  background: no-repeat center center;
+}
+.topNav .right-nav .icon-link.kf {
+  background-image: url(../images/kf.png);
+}
+.topNav .right-nav .icon-link.close {
+  background-image: url(../images/close.png);
+}
+.home-page {
+  background: url(../images/bj1.png) no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.home-page .homeNav {
+  font-size: 0;
+  text-align: center;
+  margin-top: 225px;
+  overflow: hidden;
+}
+.home-page .homeNav a {
+  width: 204px;
+  height: 79px;
+  line-height: 41px;
+  background: url(../images/button1.png) no-repeat left center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+}
+.home-page .homeNav a.last {
+  background: url(../images/button2.png) no-repeat -4px -4px;
+}
+.home-page .des {
+  width: 343px;
+  text-align: center;
+  line-height: 2em;
+  color: #9eb1b8;
+  margin: 0 auto;
+  font-size: 12px;
+}
+.home-page .des h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+.home-page .des h3 img {
+  vertical-align: middle;
+  margin: -3px 5px 0;
+}
+.home-page .des .blue {
+  color: #14b9d6;
+  font-size: 14px;
+  font-weight: bold;
+}
+.list-page {
+  background: url(../images/bg.png) no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.listwrapper {
+  position: absolute;
+  overflow-y: auto;
+  top: 70px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: #2b2e34;
+  padding: 0 10px;
+}
+.listwrapper.jsq-listwrapper {
+  position: inherit;
+  margin: 20px;
+  line-height: 2em;
+  color: #9ca2b0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+.listwrapper.jsq-listwrapper .hd {
+  margin: 0 10px;
+  border-bottom: 0;
+}
+.listwrapper.jsq-listwrapper .bd {
+  padding: 5px 20px;
+  overflow: hidden;
+}
+.listwrapper.uc-listwrapper {
+  position: inherit;
+  margin: 20px;
+  line-height: 2em;
+  color: #9ca2b0;
+  padding: 0;
+}
+.listwrapper.uc-listwrapper .hd {
+  margin: 0 10px;
+}
+.listwrapper.uc-listwrapper .bd {
+  padding: 20px;
+}
+.listwrapper.uc-listwrapper .stop {
+  position: relative;
+}
+.listwrapper.uc-listwrapper .stop:hover em {
+  display: block;
+}
+.listwrapper.uc-listwrapper .stop em {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 83px;
+  background: #282a31;
+  border: #3a4551 1px solid;
+  left: -335px;
+  top: -30px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.8em;
+  padding: 10px;
+  text-align: left;
+  color: #8c939f;
+  overflow: hidden;
+  white-space: normal;
+  border-radius: 6px;
+}
+.listwrapper .hd {
+  color: #9ca2b0;
+  line-height: 41px;
+  border-bottom: 1px solid #26292e;
+  font-weight: bold;
+  font-size: 16px;
+}
+.listwrapper .hd.type2 {
+  background: #22252a;
+  line-height: 35px;
+  height: 35px;
+  margin: 0;
+  padding-left: 10px;
+}
+.listwrapper .hd em {
+  width: 30px;
+  height: 41px;
+  background: url(../images/dian.png) center center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+.listwrapper .bd {
+  padding: 20px 30px;
+}
+/* steam登录 */
+.steamLogin .t-msg {
+  line-height: 2em;
+  color: #ff3636;
+  padding: 20px 0 40px;
+}
+.steamLogin .form-group {
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+.steamLogin .form-group label {
+  display: block;
+  color: #9ca2b0;
+  line-height: 2em;
+}
+.steamLogin .form-group input[type=text],
+.steamLogin .form-group input[type=password] {
+  width: 277px;
+  height: 34px;
+  line-height: 34px;
+  background: #363b42;
+  border: 0px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+.steamLogin .form-group input[type=text]:focus,
+.steamLogin .form-group input[type=password]:focus {
+  outline: 1px solid #14b9d6;
+}
+.steamLogin .login-dia {
+  padding: 20px;
+}
+.steamLogin .login-dia .form-group {
+  margin-bottom: 20px;
+}
+.steamLogin .login-dia label {
+  display: inline-block;
+  width: 110px;
+}
+.steamLogin .login-dia input[type=text],
+.steamLogin .login-dia input[type=password] {
+  width: 170px;
+  background: #475260;
+  vertical-align: middle;
+}
+.steamLogin .login-suc {
+  padding: 30px 20px;
+  color: #797f8b;
+  text-align: center;
+}
+.steamLogin .login-suc p {
+  text-align: left;
+  line-height: 2em;
+}
+.steamLogin .login-suc img {
+  margin-bottom: 20px;
+}
+/* steam登录 */
+.auditFail {
+  line-height: 2em;
+  color: #9ca2b0;
+}
+.auditFail .yellor {
+  color: #e1761f;
+}
+.auditFail .bor-bom {
+  border-bottom: 1px solid #22262a;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* 个人中心 */
+.userCenter .btn-default {
+  line-height: 43px;
+  width: 106px;
+}
+.userCenter .shop-table dt {
+  float: left;
+  width: 130px;
+}
+.userCenter .shop-table dt img {
+  width: 130px;
+  height: 90px;
+  border-radius: 6px;
+}
+.userCenter .shop-table dd.detail {
+  margin-left: 150px;
+  margin-right: 270px;
+  font-size: 12px;
+}
+.userCenter .shop-table dd.detail .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.userCenter .shop-table dd.time {
+  float: right;
+  width: 250px;
+  padding-left: 20px;
+}
+.userCenter .shop-table dd.time .time-box {
+  line-height: 35px;
+  height: 35px;
+  vertical-align: middle;
+  font-size: 0;
+  margin-left: 10px;
+}
+.userCenter .shop-table dd.time .time-box em {
+  display: inline-block;
+  text-align: center;
+  background: #32363d;
+  font-size: 22px;
+  color: #fff;
+  width: 55px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.userCenter .shop-table dd.time .time-box em.time-num {
+  background: #434851;
+  font-size: 16px;
+  cursor: default;
+}
+.userCenter .shop-table dd.time .time-box em:disabled {
+  color: #7e7e7e;
+}
+.userCenter .jsbtn {
+  padding: 0 40px;
+  text-align: right;
+  color: #747983;
+  font-size: 14px;
+}
+.userCenter .jsbtn .yellor {
+  color: #f57f1b;
+}
+.userCenter .jsbtn dt {
+  float: right;
+  line-height: 43px;
+  width: 106px;
+}
+.userCenter .jsbtn dd {
+  margin-right: 150px;
+  line-height: 22.5px;
+}
+.userCenter .yellor {
+  color: #f57f1b;
+}
+.userCenter .zf-dia {
+  text-align: center;
+  padding: 20px;
+  color: #acb3c3;
+  line-height: 2.4em;
+}
+.userCenter .zf-dia #qrcode {
+  text-align: center;
+  height: 190px;
+  overflow: hidden;
+  font-size: 0;
+  padding: 10px 0;
+}
+.userCenter .zf-dia #qrcode table {
+  margin: 0 auto !important;
+}
+.userCenter .zf-dia img {
+  margin: 5px 0;
+  width: 190px;
+  height: 190px;
+  display: inline-block !important;
+}
+.userCenter .zf-suc {
+  text-align: center;
+  padding: 20px;
+  color: #acb3c3;
+  line-height: 2em;
+}
+.userCenter .zf-suc img {
+  margin-bottom: 20px;
+}
+.userCenter .zf-suc p {
+  text-align: left;
+}
+.userCenter .zf-suc .btn-default {
+  line-height: 33px;
+}
+/* 加速器 */
+.jsq .card {
+  width: 145px;
+  height: 82px;
+  overflow: hidden;
+  background: url(../images/card1.png) #12aabc center center no-repeat;
+  border-radius: 6px;
+  cursor: pointer;
+  float: left;
+  margin-left: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  line-height: 1.8em;
+  position: relative;
+}
+.jsq .card .time-tip {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 14px;
+  height: 14px;
+  background: #fff;
+  padding: 0 4px;
+  color: #12aabc;
+  font-weight: normal;
+  vertical-align: text-top;
+}
+.jsq .card .select-icon {
+  position: absolute;
+  background: url(../images/select.png) no-repeat;
+  width: 27px;
+  height: 25px;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.jsq .card.selected .select-icon {
+  display: block;
+}
+.jsq .card.type2 {
+  background-image: url(../images/card2.png);
+}
+.jsq .card .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.jsq .card .price {
+  font-size: 18px;
+  color: #117e59;
+  font-weight: bold;
+}
+.jsq .card .f11 {
+  font-size: 11px;
+}
+.jsq .time-choose {
+  margin: 10px 20px -10px;
+  border-top: 1px solid #1e2124;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+.jsq .time-box {
+  line-height: 35px;
+  height: 35px;
+  vertical-align: middle;
+  font-size: 0;
+  margin-left: 10px;
+}
+.jsq .time-box em {
+  display: inline-block;
+  text-align: center;
+  background: #32363d;
+  font-size: 22px;
+  color: #fff;
+  width: 55px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.jsq .time-box em.time-num {
+  background: #434851;
+  font-size: 16px;
+  cursor: default;
+}
+.jsq .time-box em:disabled {
+  color: #7e7e7e;
+}
+.jsq .jsbtn {
+  padding: 0 40px;
+  text-align: right;
+  color: #747983;
+  font-size: 14px;
+}
+.jsq .jsbtn .yellor {
+  color: #f57f1b;
+}
+.jsq .jsbtn dt {
+  float: right;
+  line-height: 43px;
+  width: 106px;
+}
+.jsq .jsbtn dd {
+  margin-right: 150px;
+  line-height: 22.5px;
+}
+.jsq .zf-dia {
+  text-align: center;
+  padding: 20px;
+  color: #acb3c3;
+  line-height: 2.4em;
+}
+.jsq .zf-dia img {
+  margin: 5px 0;
+  width: 190px;
+  height: 190px;
+}
+.jsq .zf-suc {
+  text-align: center;
+  padding: 30px 20px 40px;
+  color: #acb3c3;
+  line-height: 2em;
+}
+.jsq .zf-suc img {
+  margin-bottom: 20px;
+}
+.jsq .zf-suc p {
+  text-align: left;
+}
+.jsq .zf-suc .btn-default {
+  line-height: 33px;
+}
+/* 账户 */
+.accout table {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  color: #969caa;
+}
+.accout table th {
+  background: #35393f;
+}
+.accout table td {
+  border-bottom: 1px solid #26292e;
+}
+.accout table .tool span,
+.accout table .tool a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #969caa;
+}
+.accout table .tool span:hover,
+.accout table .tool a:hover {
+  color: #14b9d6;
+}
+.accout .btn-default {
+  font-size: 16px;
+  font-weight: bold;
+  width: 100px;
+}
+.accout .jb-tip {
+  text-align: center;
+  padding: 30px 20px 40px;
+  color: #acb3c3;
+  line-height: 2em;
+}
+.accout .jb-tip img {
+  margin-bottom: 20px;
+}
+.accout .jb-tip p {
+  text-align: left;
+}
+.accout .jb-tip .btn-default {
+  line-height: 33px;
+  width: inherit;
+  margin: 0 10px;
+}
+/* 修改账户 */
+.editCount {
+  color: #9ca2b0;
+}
+.editCount .t-msg {
+  line-height: 2em;
+  color: #ff3636;
+  padding: 20px 0 40px;
+}
+.editCount .btn {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.editCount .error-msg {
+  width: 288px;
+  padding: 0 10px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #ff3636;
+}
+.editCount .form-group {
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+.editCount .form-group label {
+  display: inline-block;
+  color: #9ca2b0;
+  width: 8.5em;
+  padding-right: 20px;
+}
+.editCount .form-group input[type=text],
+.editCount .form-group input[type=password] {
+  width: 247px;
+  height: 34px;
+  line-height: 34px;
+  background: #363b42;
+  border: 0px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+.editCount .form-group input[type=text]:focus,
+.editCount .form-group input[type=password]:focus {
+  outline: 1px solid #14b9d6;
+}
+.dialog {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.dialog .d-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 19891014;
+  background: rgba(0, 0, 0, 0.4);
+  background: #000 \9;
+  filter: alpha(opacity=40);
+}
+.dialog .dia-content {
+  background: #323a44;
+  position: absolute;
+  z-index: 19891015;
+  width: 450px;
+  left: 50%;
+  top: 80px;
+  margin-left: -225px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.dialog .dia-content .dia-title {
+  line-height: 38px;
+  background: #262c34;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  color: #838995;
+  font-weight: bold;
+}
+.dialog .dia-content .dia-title em {
+  position: absolute;
+  background: url(../images/close.png) no-repeat center center;
+  width: 14px;
+  height: 14px;
+  top: 12px;
+  right: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,75 @@
+<div class="list-page jsq">
+    <!-- 头部导航 -->
+    <div class="topNav listNav">
+        <a href="#" class="logo"></a>
+        <div class="right-nav">
+            <a href="javascript:;" class="kf icon-link"></a>
+            <a href="javascript:;" class="close icon-link"></a>
+        </div>
+    </div>
+    <!-- 头部导航 -->
+    <div class="listwrapper jsq-listwrapper">
+        <div class="hd">
+            <em></em>购买优惠加速服务</div>
+        <div class="bd">
+            <div ng-class="{card:true,selected:item.type==type}" ng-repeat="item in shopType" ng-click="choose(item)">
+                <em class="select-icon"></em>
+                <p class="title">{{item.title}}</p>
+                <p class="f11">{{item.des}}</p>
+                <p class="price">￥{{item.money.toFixed(2)}}
+                    <em class="time-tip" ng-show="item.desC">30小时</em>
+                </p>
+            </div>
+        </div>
+        <div class="hd">
+            <em></em>购买推挤时卡加速服务</div>
+        <div class="bd">
+            <div ng-class="{card:true,type2:true,selected:item.type==type&&item.time==shopTime}" ng-repeat="item in shopType2" ng-click="choose(item)">
+                <em class="select-icon"></em>
+                <p class="title">{{item.title}}</p>
+                <p class="f11">{{item.des}}</p>
+                <p class="price">￥{{item.money.toFixed(2)}}
+                </p>
+            </div>
+        </div>
+        <div class="time-choose" ng-show="type==4">
+            更多时卡加速服务：
+            <span class="time-box">
+                <em class="time-cge" ng-click="changeTime(-1)">-</em>
+                <em class="time-num">{{shopTime}}</em>
+                <em class="time-cge" ng-click="changeTime(1)">+</em>
+            </span>
+            （租赁时长2小时起步，最长选择10小时）
+        </div>
+    </div>
+    <dl class="jsbtn" >
+        <dt class="btn btn-default b f16" ng-click="createOrder()">立即租号</dt>
+        <dd>应付金额：
+            <span class="yellor">￥6.00元</span>
+        </dd>
+        <dd>置换资产：20斑马</dd>
+    </dl>
+
+    <!-- 扫码支付 -->
+    <div my-dialog="" title="扫码支付" is-show="zfShow">
+            <div class="zf-dia">
+                <p>应付金额：6.00 置换资产：20斑马</p>
+                <p>实际付款金额：
+                    <span class="yellor">1.00元</span>
+                </p>
+                <p>
+                    <img src="" />
+                </p>
+                <p class="f12">斑马提示：斑马商城优先扣除您的账户积分</p>
+            </div>
+        </div>
+        <!-- 支付成功 -->
+        <div my-dialog="" title="支付成功" is-show="sucStatus">
+            <div class="zf-suc">
+                <img src="./images/chenggong.png" alt="">
+                <p>尊敬的用户您好！您已经成功开通了加速服务！祝游戏愉快</p>
+                <p class="mgt-5">订单号<span class="yellor">2421435w1asdf</span></p>
+                <p>加速时间：2018-05-12 13:00:23 — 2018-05-12 13:00:23</p>
+            </div>
+        </div>
+</div>

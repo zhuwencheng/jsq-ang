@@ -1,0 +1,70 @@
+<div class="list-page steamLogin">
+    <!-- 头部导航 -->
+    <div class="topNav listNav">
+        <a href="#" class="logo"></a>
+        <div class="right-nav">
+            <a href="javascript:;" class="kf icon-link"></a>
+            <a href="javascript:;" class="close icon-link"></a>
+        </div>
+    </div>
+    <!-- 头部导航 -->
+    <div class="listwrapper">
+        <div class="hd">
+            <em></em>登录</div>
+        <div class="bd">
+            <form name="loginForm" novalidate>
+                <div class="form-group">
+                    <label>Steam账户名称</label>
+                    <input type="text" ng-model="form1.user" name="user" required/>
+                    <span ng-show="loginForm.user.$invalid" class="f12 red mgl-10">请填写正确的用户名</span>
+                </div>
+                <div class="form-group">
+                    <label>密码</label>
+                    <input type="password" ng-model="form1.pwd" name="pwd" required/>
+                    <span ng-show="loginForm.pwd.$invalid" class="f12 red mgl-10">请填写正确的密码</span>
+                </div>
+                <div class="t-msg">
+                    <p>Steam绑定手机号有助于减少盗号风险</p>
+                    <p>关闭Steam令牌用户无需验证即可登录</p>
+                </div>
+                <div class="form-group">
+                    <span class="btn btn-default" ng-click="login()" ng-disabled="!loginForm.$valid">登录</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 绑定手机号 -->
+    <div my-dialog="" title="绑定手机号可以更好的管理自己的帐号" is-show="phoneStatus">
+        <div class="login-dia">
+            <form name="loginForm2" novalidate>
+                <div class="form-group">
+                    <label>手机号：</label>
+                    <input type="text" ng-model="form2.phone" name="phone" ng-minlength="11"
+                    ng-pattern="/^1[3|5][0-9]\d{4,8}$/" required/>
+                </div>
+                <div class="form-group">
+                    <label>输入验证码：</label>
+                    <input type="password" ng-model="form2.code" name="code" required/>
+                    <span class="btn btn-default mgl-10 link" ng-disabled="isSending" ng-click="sendCode()">{{sendCodeText()}}</span>
+                </div>
+                <div class="form-group t-c mgt-40">
+                    <span class="btn btn-default link" ng-click="submitPhone()" ng-disabled="!loginForm2.$valid">提交</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 绑定成功 -->
+    <div my-dialog="" title="绑定成功" is-show="sucStatus">
+        <div class="login-suc">
+            <img src="./images/chenggong.png" alt="">
+            <p>尊敬的用户您好！您的账号已经成功绑定，我们将会对账号进行审核。如审核通过，您的账号将会投入赛事中。最终获得的置换资金将以1:1的比例用”斑马”的形式返回到您的商城账户中。</p>
+        </div>
+    </div>
+    <!-- 绑定失败 -->
+    <div my-dialog="" title="绑定失败" is-show="failStatus">
+        <div class="login-suc">
+            <img src="./images/shibai.png" alt="">
+            <p>尊敬的用户您好！您的账号已经成功绑定，我们将会对账号进行审核。如审核通过，您的账号将会投入赛事中。最终获得的置换资金将以1:1的比例用”斑马”的形式返回到您的商城账户中。</p>
+        </div>
+    </div>
+</div>
